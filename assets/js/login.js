@@ -58,7 +58,7 @@ $(function () {
             url:"/api/login",
             data:$(this).serialize(),
             success:(res)=>{
-                console.log(res);
+                // console.log(res);
                 if (res.status !== 0) return layer.msg("登录失败！")
                 layer.msg("登录成功!")
                 // 携带token参数才能登录成功
