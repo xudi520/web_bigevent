@@ -65,3 +65,8 @@ const renderAvatar = (user) => {
         $(".text-avatar").html(firstName);
     }
 }
+
+// 写在外面
+function change() {
+    $("#art_list").addClass("layui-this").next().removeClass("layui-this")
+}
